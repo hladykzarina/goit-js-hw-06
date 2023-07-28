@@ -1,13 +1,7 @@
-console.log(document);
+const listCat = document.querySelectorAll('.item');
+console.log(listCat.length);
 
-const body = document.body;
-console.log(body);
-
-const list = body.firstElementChild;
-console.log(list);
-
-const firstListItem = list.firstElementChild;
-console.log(firstListItem);
-
-const listItems = list.children;
-console.log(listItems);
+listCat.forEach(function (list) {
+  console.log(list.firstElementChild.textContent);
+  console.dir(list.lastElementChild.children.length);
+});

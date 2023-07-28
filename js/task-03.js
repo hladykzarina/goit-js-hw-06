@@ -12,3 +12,12 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const list = document.querySelector('#images');
+
+images.map((element) => {
+  const li = document.createElement('li');
+  li.classList.add('item');
+  li.textContent = element;
+});
+console.log(list);

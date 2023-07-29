@@ -14,9 +14,12 @@ const images = [
 ];
 
 const list = document.querySelector('.gallery');
-const image = images.map((imgs) => 
-`<li><img class='img' src='${url}' alt='${alt}' style='border:2px solid grey; width: 400px; height:auto; display:flex; flex-direction:row;'/></li>`
-).join('');
+const image = images
+  .map(
+    (imgs) =>
+      `<li><img class='img' src='${url}' alt='${alt}' style='border:2px solid grey; width: 400px; height:auto; display:flex; flex-direction:row;'/></li>`,
+  )
+  .join('');
 
 ulEl.style.display = 'flex';
 ulEl.style.justifyContent = 'space-between';
@@ -24,10 +27,3 @@ ulEl.style.alignItems = 'center';
 ulEl.style.listStyle = 'none';
 
 list.insertAdjacentHTML('afterend', image);
-
-
-
-
-
-
-

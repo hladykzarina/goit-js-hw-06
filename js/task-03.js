@@ -13,11 +13,21 @@ const images = [
   },
 ];
 
-const list = document.querySelector('#images');
+const list = document.querySelector('.gallery');
+const image = images.map((imgs) => 
+`<li><img class='img' src='${url}' alt='${alt}' style='border:2px solid grey; width: 400px; height:auto; display:flex; flex-direction:row;'/></li>`
+).join('');
 
-images.map((element) => {
-  const li = document.createElement('li');
-  li.classList.add('item');
-  li.textContent = element;
-});
-console.log(list);
+ulEl.style.display = 'flex';
+ulEl.style.justifyContent = 'space-between';
+ulEl.style.alignItems = 'center';
+ulEl.style.listStyle = 'none';
+
+list.insertAdjacentHTML('afterend', image);
+
+
+
+
+
+
+

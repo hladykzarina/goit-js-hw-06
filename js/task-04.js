@@ -10,7 +10,7 @@ buttons.increment.addEventListener('click', changeCounter);
 
 function changeCounter(evt) {
   let counterValue = Number(counter.textContent);
-  let type = event.target.dataset.action;
+  let type = evt.target.dataset.action;
   if (type === 'decrement') {
     counterValue -= 1;
   } else if (type === 'increment') {

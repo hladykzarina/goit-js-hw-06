@@ -25,6 +25,9 @@ function createBoxes(amount) {
       return `<div style="width: ${size}px; height: ${size}px; background: ${color}"></div>`;
     })
     .join('');
+
+  const { number, button } = evt.currentTarget.elements;
+  evt.currentTarget.reset();
 }
 
 function destroyBoxes() {

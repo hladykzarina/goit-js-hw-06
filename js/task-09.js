@@ -1,6 +1,6 @@
 const button = document.querySelector('.change-color');
 const body = document.querySelector('body');
-const spanColorValue = document.querySelector('color');
+const spanColorValue = document.querySelector('.color');
 
 button.addEventListener('click', onClick);
 
